@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Coffee</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">The Coffee</div>
+      <nav id="navMenu">
+        <a href="#home">home</a>
+        <a href="#about">about us</a>
+        <a href="#menu">menu</a>
+        <a href="#subscribe">subscribe</a>
+      </nav>
+      <button class="burger" id="burgerBtn">☰</button>
+    </header>
+
+    <section id="home" class="hero">
+      <h1>The Coffee</h1>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <button class="btn">reserve here</button>
+    </section>
+
+    <section id="about">
+      <img
+        src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800"
+        alt="about us"
+      />
+      <h2>about us</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam. Lorem
+        ipsum dolor sit amet.
+      </p>
+      <button class="btn">read more</button>
+    </section>
+
+    <section id="menu">
+      <h2>special deals</h2>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800"
+            alt="name here"
+          />
+          <h3>name here</h3>
+          <button class="btn">buy now</button>
+        </div>
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/e6/66/27/e666274ae48540fa878bd49965fd36ba.jpg"
+            alt="name here"
+          />
+          <h3>name here</h3>
+          <button class="btn">buy now</button>
+        </div>
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/76/ca/cd/76cacd672f93f09100e42e458f38a907.jpg"
+            alt="name here"
+          />
+          <h3>name here</h3>
+          <button class="btn">>buy now</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="subscribe">
+      <h2>subscribe</h2>
+      <form id="subscribeForm">
+        <input type="email" id="emailInput" placeholder="Введіть email" />
+        <button type="submit" class="btn">subscribe</button>
+      </form>
+      <p id="formMsg"></p>
+    </section>
+
+    <footer>
+      <p>© 2025 The Coffee</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
