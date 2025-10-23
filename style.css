@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #584126;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.burger {
+  display: none;
+  background: none;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1600")
+    center/cover no-repeat;
+  color: rgb(189, 224, 165);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero .btn {
+  background: #000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#about img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#menu {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #b48a6391;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn {
+  margin-top: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+#subscribe {
+  padding: 50px 20px;
+  background: #eee;
+  text-align: center;
+}
+
+#subscribe input {
+  padding: 8px;
+  margin-right: 5px;
+}
+
+#formMsg {
+  margin-top: 10px;
+}
+
+footer {
+  background: #554131;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
